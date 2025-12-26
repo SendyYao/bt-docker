@@ -1,0 +1,40 @@
+{
+  "id": "50a71dc1ca9debb9339ab58ba685f9e2de13b87c4d1bac60b1ab9a37fcdd8828",
+  "new_name": "navidrome",
+  "new_image": "deluan/navidrome:latest",
+  "new_publish_all_ports": "0",
+  "new_ports": {
+    "4533/tcp": "4533"
+  },
+  "network_info": [
+    {
+      "network": "baota_net",
+      "ip_address": "172.18.0.2",
+      "ip_addressv6": ""
+    }
+  ],
+  "new_command": "",
+  "new_entrypoint": "",
+  "new_auto_remove": "0",
+  "new_privileged": "1",
+  "new_restart_policy": {
+    "Name": "always"
+  },
+  "new_mem_reservation": "0",
+  "new_cpu_quota": 0,
+  "new_mem_limit": "0",
+  "new_labels": "com.docker.compose.config-hash=f41bef973d7ac3cdad1c01d8322fe0f65419d5744ff1e348d66f2de8a5345de8\ncom.docker.compose.container-number=1\ncom.docker.compose.depends_on=\ncom.docker.compose.image=sha256:7c429749318fe8bbeae2bad3048915f6239674d6021296c73ed072b6d11bce76\ncom.docker.compose.oneoff=False\ncom.docker.compose.project=navidrome\ncom.docker.compose.project.config_files=/www/dk_project/dk_app/navidrome/navidrome/docker-compose.yml\ncom.docker.compose.project.working_dir=/www/dk_project/dk_app/navidrome/navidrome\ncom.docker.compose.service=navidrome\ncom.docker.compose.version=2.27.1\ncreatedBy=bt_apps\nmaintainer=deluan@navidrome.org\norg.opencontainers.image.created=2025-03-15T05:28:48.978Z\norg.opencontainers.image.description=🎧☁️ Your Personal Streaming Service\norg.opencontainers.image.licenses=GPL-3.0\norg.opencontainers.image.revision=beb768cd9cd00f01581fe190a345ccf8617950db\norg.opencontainers.image.source=https://github.com/navidrome/navidrome\norg.opencontainers.image.title=navidrome\norg.opencontainers.image.url=https://github.com/navidrome/navidrome\norg.opencontainers.image.version=0.55.1\n",
+  "new_environment": "ND_LOGLEVEL=info\nND_SESSIONTIMEOUT=24h\nND_BASEURL=\nND_SCANSCHEDULE=1h\nPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\nND_MUSICFOLDER=/music\nND_DATAFOLDER=/data\nND_PORT=4533\nGODEBUG=asyncpreemptoff=1\n",
+  "new_volumes": {
+    "/www/dk_project/dk_app/navidrome/navidrome/data": {
+      "bind": "/data",
+      "mode": "rw"
+    },
+    "/www/dk_project/dk_app/navidrome/navidrome/music": {
+      "bind": "/music",
+      "mode": "ro"
+    }
+  },
+  "new_tty": true,
+  "new_stdin_open": true
+}
