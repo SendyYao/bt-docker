@@ -1,0 +1,39 @@
+{
+  "name": "bt-docker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "gen:icons": "svgtofont --sources src/assets/icons/svgtofont --output src/assets/fonts --fontName svgtofont"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@xterm/xterm": "^5.5.0",
+    "axios": "^1.12.2",
+    "element-plus": "^2.11.3",
+    "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.5.0",
+    "vue": "^3.5.21",
+    "vue-router": "^4.5.1",
+    "vue3-ace-editor": "^2.2.4",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/node": "^22.18.6",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/tsconfig": "^0.7.0",
+    "ace-builds": "^1.43.3",
+    "postcss": "^8.5.6",
+    "sass-embedded": "^1.93.0",
+    "svgtofont": "^6.4.1",
+    "tailwindcss": "^4.1.13",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.6",
+    "vue-tsc": "^2.2.12"
+  }
+}
