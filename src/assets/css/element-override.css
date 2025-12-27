@@ -1,0 +1,128 @@
+:root {
+    color-scheme: light;
+    --el-color-primary: #20a53a;
+    --el-color-primary-light-3: #63c075;
+    --el-color-primary-light-5: #90d29d;
+    --el-button-hover-bg-color: #63c075;
+    --el-link-hover-text-color: #63c075;
+    --el-font-size-base: 13px
+}
+
+.el-dialog .el-dialog__title, .el-dialog .el-dialog__header {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    height: 4.4rem;
+}
+
+.el-dialog .el-dialog__footer {
+    border-top: 1px solid #edf1f2;
+    padding: 1rem 2rem;
+    background-color: #f6f8f8;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.el-dialog--center .el-dialog__footer {
+    text-align: inherit;
+}
+
+.el-tabs.tabs-left-bg-card {
+    border: none!important;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.el-tabs.tabs-left-bg-card>.el-tabs__content {
+    padding: 16px;
+    height: 100%;
+}
+
+.el-tabs__content {
+    overflow-y: auto;
+}
+
+.el-select-dropdown {
+    max-width: 280px;
+}
+
+.el-form-item__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1;
+    line-height: 32px;
+    position: relative;
+    font-size: var(--font-size);
+    min-width: 0;
+}
+
+.el-message {
+    width: fit-content;
+    max-width: calc(100% - 32px);
+    box-sizing: border-box;
+    border-radius: var(--el-border-radius-base);
+    border-width: var(--el-border-width);
+    border-style: var(--el-border-style);
+    position: fixed;
+    top: 50%!important;
+    left: 50%;
+    transition: opacity var(--el-transition-duration),transform .4s,top .4s;
+    transform: translate(-50%) translateY(-50%)!important;
+    padding: var(--el-message-padding);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff!important;
+    border-color: #fff!important;
+}
+
+.el-message--error {
+    --el-message-bg-color: var(--el-color-error-light-9);
+    --el-message-border-color: var(--el-color-error-light-8);
+    --el-message-text-color: var(--el-color-error);
+}
+
+.el-message .el-message-icon--error {
+    color: var(--el-message-text-color)
+}
+
+.el-message__icon {
+    font-size: 3rem!important;
+    padding: 0;
+    margin-top: 4px;
+}
+
+.el-icon {
+    --color: inherit;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    fill: currentColor;
+}
+
+.el-message__content {
+    flex: 1;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+    color: #555!important;
+}
+
+a .el-link {
+    vertical-align: initial;
+}
+
+.el-link {
+    font-weight: 400;
+    line-height: 1.4;
+    outline: none;
+    text-decoration: none;
+}
+
+.el-link.el-link--primary:hover {
+    color: #1e7e34;
+}
